@@ -139,7 +139,7 @@ register("slider", "Titanium.UI.Slider", {
 
 register("imageview", "Ti.UI.createImageView", {
  factory: function factory(props) {
-    return Ti.UI.createEmailDialog(props);
+    return Ti.UI.createImageView(props);
   }
 });
 
