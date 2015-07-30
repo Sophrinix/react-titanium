@@ -122,23 +122,17 @@ register("list", "Titanium.UI.ListView", {
 });
 
 register("switch", "Titanium.UI.Switch", {
-  factory: function factory(props) {
-    return Titanium.UI.createSwitch(props);
-  }
+  factory: props => Titanium.UI.createSwitch(props)
 });
 /* this is too naive
 we must also support options, option, and buttonNames
 
 register("optiondialog", "Titanium.UI.OptionDialog", {
-  factory: function factory(props) {
-    return Titanium.UI.createOptionDialog(props);
-  }
+   factory: props => Titanium.UI.createOptionDialog(props)
 });
 */
 register("slider", "Titanium.UI.Slider", {
- factory: function factory(props) {
-    return Titanium.UI.createSlider(props);
-  }
+  factory: props => Titanium.UI.createSlider(props)
 });
 
 
