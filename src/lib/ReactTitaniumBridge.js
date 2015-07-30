@@ -145,6 +145,7 @@ register("imageview", "Ti.UI.createImageView", {
 
 
 
+
 register("root", "react.titanium.Root", {
   factory: props => ({
     apiName: "react.titanium.Root",
@@ -162,3 +163,4 @@ register("root", "react.titanium.Root", {
     }
   })
 });
+
