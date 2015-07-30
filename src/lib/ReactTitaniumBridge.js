@@ -141,11 +141,7 @@ register("slider", "Titanium.UI.Slider", {
   }
 });
 
-register("emaildialog", "Ti.UI.createEmailDialog", {
- factory: function factory(props) {
-    return Ti.UI.createEmailDialog(props);
-  }
-});
+
 
 register("imageview", "Ti.UI.createImageView", {
  factory: function factory(props) {
