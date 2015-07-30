@@ -144,23 +144,3 @@ register("imageview", "Ti.UI.createImageView", {
 });
 
 
-
-
-register("root", "react.titanium.Root", {
-  factory: props => ({
-    apiName: "react.titanium.Root",
-
-    children: [],
-
-    add(child) {
-      this.children.push(child);
-    },
-
-    open(props) {
-      for (let child of this.children) {
-        child.open(props);
-      }
-    }
-  })
-});
-
