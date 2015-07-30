@@ -122,15 +122,21 @@ register("list", "Titanium.UI.ListView", {
 });
 
 register("switch", "Titanium.UI.Switch", {
-  factory: props => Titanium.UI.createSwitch(props)
+  factory: function factory(props) {
+    return Titanium.UI.createSwitch(props);
+  }
 });
 
 register("optiondialog", "Titanium.UI.OptionDialog", {
-  factory: props => Titanium.UI.OptionDialog(props)
+  factory: function factory(props) {
+    return Titanium.UI.createOptionDialog(props);
+  }
 });
 
 register("slider", "Titanium.UI.Slider", {
-  factory: props => 	Titanium.UI.Slider(props)
+ factory: function factory(props) {
+    return Titanium.UI.createSlider(props);
+  }
 });
 
 register("root", "react.titanium.Root", {
